@@ -1,0 +1,60 @@
+/* div {
+  background-color: #6e502d;
+}
+p {
+  color: #3d342b;
+}
+button {
+} */
+
+body {
+  background-image: url(../../assets/Bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  margin: 20px auto;
+  width: 1000px;
+  height: 15vh;
+  background-color: aliceblue;
+}
+img {
+  align-content: center;
+  margin: 30px;
+  width: 150px;
+  align-content: center;
+  height: 40px;
+}
+.left-container {
+  align-content: start;
+}
+
+.right-container {
+  width: 40%;
+  justify-items: end;
+  margin: 10px auto;
+  background-color: rgb(38, 46, 46);
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin: 20px auto;
+  background-color: aliceblue;
+}
+.right-container li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+.right-container a {
+  margin-left: auto;
+  align-content: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row-reverse;
+}
