@@ -1,8 +1,8 @@
 // Auora;
 import express, { json } from "express";
 import connectToDb from "./src/connectToDb/connectToDb.js";
-import productRouter from "./src/route/productRouter.js";
 import cors from "cors";
+import userRouter from "./src/Routes/userRouter.js";
 
 const app = express();
 app.use(cors());
@@ -15,4 +15,4 @@ app.use(express.static("public"));
 
 app.use(json());
 
-app.use("/product", productRouter);
+app.use("/user", userRouter);
