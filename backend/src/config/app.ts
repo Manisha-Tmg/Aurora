@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import userRouter from "../Routes/user.routes";
 
 export class App {
   public app = express();
@@ -20,5 +21,6 @@ export class App {
   }
   private initializeRoutes() {
     // define routes
+    this.app.use("/user", userRouter);
   }
 }
